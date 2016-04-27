@@ -17,5 +17,12 @@ public class CalculadoraTest {
 		int resultado= cal.sumar(-1,7);
 		assertThat(resultado,is(6));
 	}
+	@Test 
+	public void docientosmenosSetentaYTresEsCientoVeintiSiete(){
+		Calculadora cal =new Calculadora();
+		int resultado= cal.restar(200,73);
+		assertThat(resultado,is(127));
+	}
+	
 	
 }
