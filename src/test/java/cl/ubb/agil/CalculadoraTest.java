@@ -30,7 +30,7 @@ public class CalculadoraTest {
 		assertThat(resultado,is(-15));
 	}
 	@Test 
-	public void miltiplicaSeisyTresEsDieciocho(){
+	public void multiplicaSeisyTresEsDieciocho(){
 		Calculadora cal =new Calculadora();
 		int resultado= cal.multiplicar(6,3);
 		assertThat(resultado,is(18));
