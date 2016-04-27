@@ -47,5 +47,10 @@ public class CalculadoraTest {
 		int resultado= cal.dividir(12,3);
 		assertThat(resultado,is(4));
 	}
+	public void DividirTreintaySeisYSeisEsSeis(){
+		Calculadora cal =new Calculadora();
+		int resultado= cal.dividir(36,6);
+		assertThat(resultado,is(6));
+	}
 	
 }
