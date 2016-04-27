@@ -9,6 +9,6 @@ public class Calculadora {
 		return ( a-b);
 	}
 	public int multiplicar(int a, int b){
-		return ( 18);
+		return ( a*b);
 	}
 }
