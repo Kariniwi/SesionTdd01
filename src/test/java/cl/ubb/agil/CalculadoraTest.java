@@ -23,6 +23,12 @@ public class CalculadoraTest {
 		int resultado= cal.restar(200,73);
 		assertThat(resultado,is(127));
 	}
+	@Test 
+	public void menosDiezmenosCincoEsMenosQuince(){
+		Calculadora cal =new Calculadora();
+		int resultado= cal.restar(-10,5);
+		assertThat(resultado,is(-15));
+	}
 	
 	
 }
