@@ -53,5 +53,11 @@ public class CalculadoraTest {
 		int resultado= cal.dividir(36,6);
 		assertThat(resultado,is(6));
 	}
+	@Test
+	public void DividirDoceyCeroEsExcepction(){
+		Calculadora cal =new Calculadora();
+		int resultado= cal.dividir(12,0);
+		assertThat(resultado,is(0));
+	}
 	
 }
