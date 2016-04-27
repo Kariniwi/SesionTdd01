@@ -6,6 +6,6 @@ public class Calculadora {
 		return ( a+  b);
 	}
 	public int restar(int a, int b){
-		return ( 127);
+		return ( a-b);
 	}
 }
