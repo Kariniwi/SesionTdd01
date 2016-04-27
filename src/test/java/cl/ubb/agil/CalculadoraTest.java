@@ -41,5 +41,11 @@ public class CalculadoraTest {
 		int resultado= cal.multiplicar(12,4);
 		assertThat(resultado,is(48));
 	}
+	@Test 
+	public void DividirDoceYTresEsCuatro(){
+		Calculadora cal =new Calculadora();
+		int resultado= cal.dividir(12,3);
+		assertThat(resultado,is(4));
+	}
 	
 }
