@@ -35,5 +35,11 @@ public class CalculadoraTest {
 		int resultado= cal.multiplicar(6,3);
 		assertThat(resultado,is(18));
 	}
+	@Test 
+	public void multiplicaDoceYCuatroEsCuarentaYOcho(){
+		Calculadora cal =new Calculadora();
+		int resultado= cal.multiplicar(12,4);
+		assertThat(resultado,is(48));
+	}
 	
 }
