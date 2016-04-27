@@ -42,22 +42,22 @@ public class CalculadoraTest {
 		assertThat(resultado,is(48));
 	}
 	@Test 
-	public void DividirDoceYTresEsCuatro(){
+	public void DividirDoceYTresEsCuatro()throws ExcepcionOperacionInvalida{
 		Calculadora cal =new Calculadora();
 		int resultado= cal.dividir(12,3);
 		assertThat(resultado,is(4));
 	}
 	@Test
-	public void DividirTreintaySeisYSeisEsSeis(){
+	public void DividirTreintaySeisYSeisEsSeis()throws ExcepcionOperacionInvalida{
 		Calculadora cal =new Calculadora();
 		int resultado= cal.dividir(36,6);
 		assertThat(resultado,is(6));
 	}
-	@Test
-	public void DividirDoceyCeroEsExcepction(){
+	@Test (expected= ExcepcionOperacionInvalida.class )
+	public void DividirDoceyCeroEsExcepction() throws ExcepcionOperacionInvalida{
 		Calculadora cal =new Calculadora();
 		int resultado= cal.dividir(12,0);
-		assertThat(resultado,is(0));
+		
 	}
 	
 }
